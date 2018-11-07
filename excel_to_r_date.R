@@ -1,3 +1,4 @@
 excel_to_r_date <- function(num) {
-    return(as.Date(num, origin = "1899-12-30"));
+    rawNum <- as.numeric(as.character(num))
+    return(as.Date(rawNum, origin = "1899-12-30"))
 }
